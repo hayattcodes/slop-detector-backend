@@ -24,7 +24,7 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
 from app.engines.base import Engine, EngineOutput
 
-_MODEL_ID = "gpt2"
+_MODEL_ID = "distilgpt2"
 _STRIDE = 512
 _MAX_LENGTH = 1024
 
