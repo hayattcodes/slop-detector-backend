@@ -55,7 +55,7 @@ class TransformerClassifierEngine(Engine):
 
         model, tokenizer = _load_model()
         cleaned = preprocessing_text(text[:4000])
-        tokens = tokenizer(
+        tokens = tokenizer.encode_plus(
             cleaned,
             add_special_tokens=True,
             max_length=512,
